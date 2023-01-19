@@ -1,0 +1,153 @@
+.modal {
+  background: rgba(0, 0, 0, 0.2);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  content: "scale(1.25)";
+  animation: 3000ms infinite 1000ms;
+
+  &__container {
+    position: absolute;
+    width: 528px;
+    min-height: 581px;
+    top: 50%;
+    left: 50%;
+    background: white;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+      0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 4px;
+    transform: translate(-50%, -50%) scale(1);
+    transition-property: transform;
+    transition-duration: 1s;
+    transition-timing-function: ease;
+    text-align: center;
+    padding: 40px;
+
+    &-title {
+      font-size: 20px;
+      font-weight: 700;
+      line-height: 1.15;
+      text-align: center;
+      letter-spacing: 0.03em;
+    }
+    &-form {
+      &-label {
+        margin-bottom: 4px;
+        text-align: start;
+        display: block;
+        margin-top: 10px;
+        font-size: 12px;
+        line-height: 1.17;
+        color: var(--light-grey);
+        letter-spacing: 0.01em;
+      }
+      &-wrapper {
+        position: relative;
+      }
+      &-item {
+        border: 1px solid rgba(33, 33, 33, 0.2);
+        border-radius: 4px;
+        width: 100%;
+        height: 40px;
+        padding-left: 42px;
+      }
+      &-item:focus {
+        border-color: #2196f3;
+        outline: none;
+      }
+      &-item:focus + .modal__container-form-svg {
+        fill: var(--light-blue);
+      }
+      &-svg {
+        position: absolute;
+        left: 12px;
+        top: 11px;
+      }
+      &-comment {
+        border: 1px solid rgba(33, 33, 33, 0.2);
+        border-radius: 4px;
+        width: 448px;
+        height: 120px;
+        resize: none;
+        padding: 12px 16px;
+      }
+      &-comment:focus {
+        border-color: #2196f3;
+        outline: none;
+      }
+      &-button {
+        width: 200px;
+        height: 50px;
+        background-color: #2196f3;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+        border-radius: 4px;
+        border-style: none;
+        font-size: 16px;
+        font-weight: 700;
+        color: var(--white);
+        letter-spacing: 0.06em;
+        cursor: pointer;
+        margin-top: 20px;
+      }
+    }
+    &-rules {
+      font-size: 14px;
+      line-height: 1.71;
+      letter-spacing: 0.03em;
+      display: flex;
+      margin-top: 20px;
+      color: var(--light-grey);
+      align-items: center;
+      gap: 7px;
+      margin-left: 17px;
+    }
+    &-form a {
+      color: #2196f3;
+    }
+  }
+  &-checkbox {
+    display: none;
+    width: 0px;
+  }
+  &-checkbox:checked + .custom-checkbox > .custom-checkbox-svg {
+    opacity: 1;
+    background-color: #2196f3;
+    border-radius: 2px;
+    fill: var(--white);
+  }
+}
+.modal-close-button {
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  background: var(--white);
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 50%;
+  cursor: pointer;
+  top: 8px;
+  right: 8px;
+}
+.modal.is-hidden .modal-box {
+  transform: translate(-50%, -50%) scale(0.1) rotate(180deg) skew(180deg);
+}
+.is-hidden {
+  pointer-events: none;
+  visibility: hidden;
+  opacity: 0;
+  transition-delay: 500ms;
+}
+.custom-checkbox {
+  position: relative;
+  width: 16px;
+  height: 15px;
+  border: 2px solid black;
+  border-radius: 2px;
+}
+.custom-checkbox-svg {
+  opacity: 0;
+  position: absolute;
+  top: -2px;
+  left: -2px;
+}
