@@ -111,3 +111,117 @@
     color: black;
   }
 }
+
+// .header {
+//   padding: 24px 0 25px;
+//   border-bottom: 1px solid #ececec;
+
+//   &__container {
+//     display: flex;
+//     justify-content: space-between;
+//     align-items: center;
+//   }
+
+//   &__navigation {
+//     display: flex;
+//     align-items: center;
+
+//     &-list {
+//       list-style: none;
+//       list-style-type: none;
+//       display: flex;
+//       flex-direction: row;
+//       padding: 0;
+//       gap: 46px;
+//       margin-left: 93px;
+//       letter-spacing: 0.02em;
+//     }
+
+//     &-link {
+//       font-size: 14px;
+//       color: var(--black-nav-link);
+//       line-height: 1.14;
+//       font-weight: 500;
+//       text-decoration: none;
+//       letter-spacing: 0.03em;
+//       position: relative;
+
+//       &--active::after {
+//         content: "";
+//         position: absolute;
+//         display: block;
+//         width: 100%;
+//         height: 4px;
+//         background-color: var(--light-blue);
+//         border-radius: 2px;
+//         top: 45.5px;
+//       }
+
+//       &--active {
+//         position: relative;
+//         color: var(--light-blue);
+//       }
+
+//       &:is(:hover, :focus)::after {
+//         content: "";
+//         position: absolute;
+//         display: block;
+//         width: 100%;
+//         height: 4px;
+//         background-color: var(--light-blue);
+//         border-radius: 2px;
+//         top: 45.5px;
+//       }
+
+//       &:is(:hover, :focus) {
+//         color: var(--light-blue);
+//         transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+//       }
+//     }
+//     &:focus {
+//       color: var(--light-blue);
+//     }
+//   }
+
+//   &__navigation:focus {
+//     color: var(--light-blue);
+//   }
+//   &__contact-list {
+//     list-style: none;
+//     list-style-type: none;
+//     display: flex;
+//     padding: 0;
+//     gap: 50px;
+//     letter-spacing: 0.02em;
+
+//     & a:is(:hover, :focus) {
+//       color: var(--light-blue);
+//       transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+//     }
+//   }
+//   &__contact-item {
+//     font-size: 14px;
+//     color: var(--light-grey);
+//     line-height: 1.14;
+//     font-weight: 500;
+//     text-decoration: none;
+//     fill: currentColor;
+//   }
+//   &__contact-svg {
+//     margin-right: 10px;
+//   }
+// }
+// .logo {
+//   color: var(--light-blue);
+//   line-height: 1.19;
+//   text-decoration: none;
+//   font-size: 26px;
+//   line-height: 1.19;
+//   font-weight: 700;
+//   font-family: "Raleway", sans-serif;
+//   letter-spacing: 0.03em;
+
+//   &__studio--black {
+//     color: black;
+//   }
+// }
