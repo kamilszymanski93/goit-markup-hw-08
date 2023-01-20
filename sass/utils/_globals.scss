@@ -10,7 +10,7 @@ img {
   vertical-align: middle;
 }
 .container {
-  width: 1200px;
+  max-width: 768px;
   margin: 0 auto;
   padding: 0 15px;
 }
@@ -22,3 +22,27 @@ body {
   font-family: "Roboto", "Raleway", sans-serif;
   color: #111;
 }
+// * {
+//   margin: 0;
+//   padding: 0;
+// }
+// img,
+// svg {
+//   vertical-align: middle;
+// }
+// img {
+//   vertical-align: middle;
+// }
+// .container {
+//   width: 1200px;
+//   margin: 0 auto;
+//   padding: 0 15px;
+// }
+// .section {
+//   padding: 94px 0;
+// }
+
+// body {
+//   font-family: "Roboto", "Raleway", sans-serif;
+//   color: #111;
+// }

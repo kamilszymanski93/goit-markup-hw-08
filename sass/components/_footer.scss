@@ -68,7 +68,7 @@
   &__socialmedia {
     display: block;
     padding-top: 12px;
-    margin-left: 70px;
+    // margin-left: 70px;
 
     &-title {
       color: white;
@@ -82,7 +82,7 @@
     &-icons {
       display: flex;
       list-style: none;
-      justify-content: center;
+      justify-content: flex-start;
       margin-top: 20px;
       gap: 10px;
     }
@@ -112,7 +112,7 @@
   }
   &__newsletter {
     padding-top: 12px;
-    margin-left: 70px;
+    // margin-left: 70px;
     position: relative;
 
     &-title {
@@ -135,7 +135,8 @@
       /* margin-top: 20px; */
       padding-left: 16px;
       position: relative;
-      width: 358px;
+      // width: 358px;
+
       height: 50px;
     }
 
@@ -149,6 +150,8 @@
     }
     &-form {
       padding-top: 20px;
+      display: flex;
+      flex-direction: column;
     }
     &-button {
       width: 200px;
@@ -163,6 +166,7 @@
       letter-spacing: 0.06em;
       color: white;
       margin-left: 12px;
+      margin-top: 20px;
       cursor: pointer;
 
       &-use {
