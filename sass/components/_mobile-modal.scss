@@ -1,28 +1,80 @@
 .mobile {
+  height: 796px;
+  width: 480px;
+  padding: 48px 40px;
+
   &__links {
   }
   &__menu {
     &-item {
+      font-size: 40px;
+      font-weight: 500;
+      letter-spacing: 0.02em;
+      line-height: 1.17;
+      cursor: pointer;
+    }
+    &__menu:is(:hover, :focus) {
+      color: var(--light-blue);
+      text-decoration: underline;
+      text-decoration-color: var(--light-blue);
     }
     &-link {
+    }
+    &-list {
+      list-style: none;
     }
   }
   &__contact {
-    &-list {
+    &-tel {
+      font-size: 34px;
+      font-weight: 500;
+      letter-spacing: 0.02em;
+      line-height: 1.17;
+      cursor: pointer;
+      color: var(--light-blue);
     }
-    &-link {
+    &-tel:is(:hover, :focus) {
+      text-decoration: underline;
+      text-decoration-color: var(--light-blue);
     }
-    &-item {
+    &-mail {
+      font-size: 24px;
+      font-weight: 500;
+      letter-spacing: 0.02em;
+      line-height: 1.17;
+      cursor: pointer;
+      color: var(--light-grey);
     }
-    &-svg {
+    &-mail:is(:hover, :focus) {
+      text-decoration: underline;
+      text-decoration-color: var(--light-blue);
     }
   }
   &__socialmedia {
     &-list {
+      list-style: none;
+      display: flex;
     }
     &-item {
     }
     &-link {
     }
+  }
+}
+.menu-container {
+  position: fixed;
+  inset: 0;
+  background-color: white;
+  transform: translateX(100%);
+  opacity: 0;
+  pointer-events: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  &.is-open {
+    transform: translateX(0);
+    opacity: 1;
+    pointer-events: all;
   }
 }

@@ -28,26 +28,7 @@
           <a class="logo" href="index.html"
             >Web<span class="logo__studio logo__studio--black">Studio</span></a
           >
-          <!-- Mobilny button menu -->
-          <button
-            class="menu-toggle js-open-menu"
-            aria-expanded="false"
-            aria-controls="mobile-menu"
-          >
-            <svg
-              width="24"
-              height="24"
-              fill="currentColor"
-              viewBox="0 0 20 20"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                fill-rule="evenodd"
-                d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
-                clip-rule="evenodd"
-              ></path>
-            </svg>
-          </button>
+
           <!-- Menu makiety -->
           <ul class="header__navigation-list">
             <li>
@@ -83,6 +64,26 @@
             >
           </li>
         </ul>
+        <!-- Mobilny button menu -->
+        <button
+          class="menu-toggle js-open-menu"
+          aria-expanded="false"
+          aria-controls="mobile-menu"
+        >
+          <svg
+            width="24"
+            height="24"
+            fill="currentColor"
+            viewBox="0 0 20 20"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              fill-rule="evenodd"
+              d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
+              clip-rule="evenodd"
+            ></path>
+          </svg>
+        </button>
       </div>
     </header>
     <main>
@@ -409,24 +410,22 @@
             <li class="mobile__menu-item">
               <a class="mobile__menu-link" href="#">Kontakt</a>
             </li>
-          </ul>
-        </div>
-        <div class="mobile__contact">
-          <ul class="mobile__contact-list">
-            <li class="mobile__contact-item">
-              <a class="mobile__contact-link" href="mailto:info@devstudio.com"
-                ><svg class="mobile__contact-svg" width="16" height="12">
-                  <use href="images/icons.svg#icon-mail-icon"></use>
-                </svg>
-                info@devstudio.com</a
-              >
-            </li>
-            <li class="mobile__contact-item">
+
+            <li class="mobile__contact-tel">
               <a class="mobile__contact-link" href="tel:+48-111-111-111"
                 ><svg class="mobile__contact-svg" width="10" height="16">
                   <use href="images/icons.svg#icon-smartphone-icon"></use>
                 </svg>
                 +48 111 111 111</a
+              >
+            </li>
+
+            <li class="mobile__contact-mail">
+              <a class="mobile__contact-link" href="mailto:info@devstudio.com"
+                ><svg class="mobile__contact-svg" width="16" height="12">
+                  <use href="images/icons.svg#icon-mail-icon"></use>
+                </svg>
+                info@devstudio.com</a
               >
             </li>
           </ul>
