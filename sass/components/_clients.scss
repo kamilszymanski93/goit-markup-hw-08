@@ -1,7 +1,7 @@
 .clients {
   &__title {
     display: flex;
-    // justify-content: center;
+    justify-content: center;
     align-items: center;
     font-size: 28px;
     font-weight: 700;
@@ -10,15 +10,19 @@
   }
   &__list {
     display: flex;
-    flex-direction: column;
+    flex-wrap: wrap;
     list-style: none;
     gap: 30px;
     padding-top: 50px;
 
     &-item {
-      width: 170px;
+      width: 210px;
       height: 92px;
-      padding: 16px 32px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      // padding: 16px 32px;
       border: 1px solid #afb1b8;
       border-radius: 4px;
       cursor: pointer;
