@@ -3,8 +3,6 @@
   width: 480px;
   padding: 48px 40px;
 
-  &__links {
-  }
   &__menu {
     &-item {
       font-size: 40px;
@@ -17,8 +15,6 @@
       color: var(--light-blue);
       text-decoration: underline;
       text-decoration-color: var(--light-blue);
-    }
-    &-link {
     }
     &-list {
       list-style: none;
@@ -54,10 +50,6 @@
     &-list {
       list-style: none;
       display: flex;
-    }
-    &-item {
-    }
-    &-link {
     }
   }
 }
