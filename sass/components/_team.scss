@@ -5,7 +5,8 @@
   &__title {
     font-size: 36px;
     line-height: 1.17;
-
+    display: flex;
+    justify-content: center;
     font-weight: 700;
     letter-spacing: 0.03em;
     margin-bottom: 50px;
@@ -13,7 +14,10 @@
   &__list {
     list-style-type: none;
     display: flex;
+
+    align-items: center;
     flex-direction: column;
+
     gap: 30px;
 
     &-svg {
@@ -21,11 +25,13 @@
     }
 
     &-element {
+      max-width: 450px;
       background-color: white;
       border-radius: 2px;
       box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
       display: flex;
       flex-direction: column;
+      justify-content: center;
     }
 
     &-names {
@@ -87,90 +93,183 @@
     }
   }
 }
+.team {
+  @include tablet {
+    &__title {
+      font-size: 36px;
+      line-height: 1.17;
 
-// .team-background {
-//   background-color: var(--background-soft-grey);
-// }
-// .team {
-//   &__title {
-//     font-size: 36px;
-//     line-height: 1.17;
-//     text-align: center;
-//     font-weight: 700;
-//     letter-spacing: 0.03em;
-//     margin-bottom: 50px;
-//   }
-//   &__list {
-//     list-style-type: none;
-//     display: flex;
-//     gap: 30px;
+      font-weight: 700;
+      letter-spacing: 0.03em;
+      margin-bottom: 50px;
+    }
+    &__list {
+      list-style-type: none;
+      display: flex;
+      justify-content: center;
+      flex-direction: row;
+      flex-wrap: wrap;
+      gap: 30px;
 
-//     &-svg {
-//       fill: gray;
-//     }
+      &-svg {
+        fill: gray;
+      }
 
-//     &-element {
-//       background-color: white;
-//       border-radius: 2px;
-//       box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-//     }
+      &-element {
+        max-width: 354px;
+        background-color: white;
+        border-radius: 2px;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        display: flex;
+        // flex-direction: column;
+      }
 
-//     &-names {
-//       color: var(--dark-grey);
-//       font-size: 16px;
-//       line-height: 1.17;
-//       font-weight: 500;
-//       display: block;
-//       text-align: center;
-//       margin-top: 30px;
-//       letter-spacing: 0.03em;
-//     }
+      &-names {
+        color: var(--dark-grey);
+        font-size: 16px;
+        line-height: 1.17;
+        font-weight: 500;
+        display: block;
+        text-align: center;
+        margin-top: 30px;
+        letter-spacing: 0.03em;
+      }
 
-//     &-position {
-//       display: block;
-//       text-align: center;
-//       margin-top: 10px;
-//       font-size: 16px;
-//       font-weight: 400;
-//       line-height: 1.17;
-//       letter-spacing: 0.03em;
-//       color: var(--light-grey);
-//       line-height: 1.19;
-//     }
+      &-position {
+        display: block;
+        text-align: center;
+        margin-top: 10px;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 1.17;
+        letter-spacing: 0.03em;
+        color: var(--light-grey);
+        line-height: 1.19;
+      }
 
-//     &-description {
-//       font-size: 16px;
-//       line-height: 1.19;
-//       color: var(--dark-grey);
-//       font-weight: 500;
-//       padding-bottom: 30px;
-//     }
-//     &-icons {
-//       display: flex;
-//       list-style: none;
-//       justify-content: center;
-//       padding-top: 16px;
-//       gap: 10px;
-//     }
-//     &-icon {
-//       height: 44px;
-//       width: 44px;
-//       display: flex;
-//       justify-content: center;
-//       align-items: center;
-//       border-radius: 50%;
-//       cursor: pointer;
+      &-description {
+        font-size: 16px;
+        line-height: 1.19;
+        color: var(--dark-grey);
+        font-weight: 500;
+        padding-bottom: 30px;
+      }
+      &-icons {
+        display: flex;
+        list-style: none;
+        justify-content: center;
+        padding-top: 16px;
+        gap: 10px;
+      }
+      &-icon {
+        height: 44px;
+        width: 44px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 50%;
+        cursor: pointer;
 
-//       &:is(:hover, :focus) {
-//         fill: white;
-//         background-color: var(--light-blue);
-//         transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1),
-//           background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-//       }
+        &:is(:hover, :focus) {
+          fill: white;
+          background-color: var(--light-blue);
+          transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1),
+            background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+        }
 
-//       &:is(:hover, :focus) > .team__list-svg {
-//         fill: white;
-//       }
-//     }
-//   }
-// }
+        &:is(:hover, :focus) > .team__list-svg {
+          fill: white;
+        }
+      }
+    }
+  }
+}
+@include desktop {
+  .team-background {
+    background-color: var(--background-soft-grey);
+  }
+  .team {
+    &__title {
+      font-size: 36px;
+      line-height: 1.17;
+      text-align: center;
+      font-weight: 700;
+      letter-spacing: 0.03em;
+      margin-bottom: 50px;
+    }
+    &__list {
+      list-style-type: none;
+      display: flex;
+      gap: 30px;
+
+      &-svg {
+        fill: gray;
+      }
+
+      &-element {
+        width: 270px;
+        background-color: white;
+        border-radius: 2px;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+      }
+
+      &-names {
+        color: var(--dark-grey);
+        font-size: 16px;
+        line-height: 1.17;
+        font-weight: 500;
+        display: block;
+        text-align: center;
+        margin-top: 30px;
+        letter-spacing: 0.03em;
+      }
+
+      &-position {
+        display: block;
+        text-align: center;
+        margin-top: 10px;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 1.17;
+        letter-spacing: 0.03em;
+        color: var(--light-grey);
+        line-height: 1.19;
+      }
+
+      &-description {
+        font-size: 16px;
+        line-height: 1.19;
+        color: var(--dark-grey);
+        font-weight: 500;
+        padding-bottom: 30px;
+      }
+      &-icons {
+        display: flex;
+        list-style: none;
+        justify-content: center;
+        padding-top: 16px;
+        gap: 10px;
+      }
+      &-icon {
+        height: 44px;
+        width: 44px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 50%;
+        cursor: pointer;
+
+        &:is(:hover, :focus) {
+          fill: white;
+          background-color: var(--light-blue);
+          transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1),
+            background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        &:is(:hover, :focus) > .team__list-svg {
+          fill: white;
+        }
+      }
+    }
+  }
+}
