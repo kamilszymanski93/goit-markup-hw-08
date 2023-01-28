@@ -207,6 +207,8 @@
 }
 @include desktop {
   .footer {
+    display: flex;
+    flex-direction: column;
     background-color: #2f303a;
     padding: 60px 0px;
     &__address > a:focus {
