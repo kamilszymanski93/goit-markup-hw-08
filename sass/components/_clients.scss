@@ -5,7 +5,7 @@
     align-items: center;
     font-size: 28px;
     font-weight: 700;
-    line-height: 1.17;
+    line-height: calc(33 / 28);
     letter-spacing: 0.03em;
   }
   &__list {
