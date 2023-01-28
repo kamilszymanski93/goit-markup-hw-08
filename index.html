@@ -405,31 +405,50 @@
     </main>
     <!-- Mobile modal menu -->
     <div class="menu-container js-menu-container" id="mobile-menu">
-      <div class="mobile-container">
+      <div class="mobile">
         <button class="menu-toggle js-close-menu">
-          <svg width="18" height="18">
+          <svg class="mobile__container-svg" width="40" height="40">
             <use href="images/icons.svg#icon-cross"></use>
           </svg>
         </button>
-        <ul class="mobile-menu">
-          <li><a href="index.html" class="link">Agencja</a></li>
-          <li><a href="portfolio.html" class="link link-dis">Portfolio</a></li>
-          <li><a href="kontakt.html" class="link">Kontakt</a></li>
+        <ul class="mobile__menu">
+          <li><a href="index.html" class="mobile__menu-item">Agencja</a></li>
+          <li>
+            <a href="portfolio.html" class="mobile__menu-item">Portfolio</a>
+          </li>
+          <li><a href="kontakt.html" class="mobile__menu-item">Kontakt</a></li>
+
+          <li>
+            <a class="mobile__menu-phone" href="tel:+48111111111"
+              >+48 111 111 111</a
+            >
+          </li>
+          <li>
+            <a class="mobile__menu-email" href="mailto:info@devstudio.com"
+              >info@devstudio.com</a
+            >
+          </li>
         </ul>
-        <a class="mobile-phone" href="tel:+48111111111">+48 111 111 111</a>
-        <a class="mobile-email" href="mailto:info@devstudio.com"
-          >info@devstudio.com</a
-        >
-        <a class="mobile-linkmedia" href="#"
-          >Instagram<span class="mobile-linkmedia-space">&nbsp|&nbsp</span></a
-        >
-        <a class="mobile-linkmedia" href="#"
-          >Twitter<span class="mobile-linkmedia-space">&nbsp|&nbsp</span></a
-        >
-        <a class="mobile-linkmedia" href="#"
-          >Facebook<span class="mobile-linkmedia-space">&nbsp|&nbsp</span></a
-        >
-        <a class="mobile-linkmedia" href="#">LinkedIn</a>
+        <div class="mobile__socialmedia">
+          <ul>
+            <a class="mobile__socialmedia-item" href="#"
+              >Instagram<span class="mobile__socialmedia-border"
+                >&nbsp|&nbsp</span
+              ></a
+            >
+            <a class="mobile__socialmedia-item" href="#"
+              >Twitter<span class="mobile__socialmedia-border"
+                >&nbsp|&nbsp</span
+              ></a
+            >
+            <a class="mobile__socialmedia-item" href="#"
+              >Facebook<span class="mobile__socialmedia-border"
+                >&nbsp|&nbsp</span
+              ></a
+            >
+            <a class="mobile__socialmedia-item" href="#">LinkedIn</a>
+          </ul>
+        </div>
       </div>
     </div>
     <!-- Stopka -->
@@ -486,10 +505,7 @@
         <!-- Newsletter -->
         <div class="footer__newsletter">
           <h3 class="footer__newsletter-title">Zapisz się do newslettera</h3>
-          <form
-            class="footer__newsletter-form"
-            style="display: flex; align-items: center"
-          >
+          <form class="footer__newsletter-form">
             <input
               class="footer__newsletter-input"
               type="email"
