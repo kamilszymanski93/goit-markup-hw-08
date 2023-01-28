@@ -1,5 +1,5 @@
 .header {
-  padding: 24px 0 25px;
+  padding: 16px 0 16px;
   border-bottom: 1px solid #ececec;
 
   &__container {
@@ -116,7 +116,7 @@
 
 @include tablet {
   .header {
-    padding: 24px 0 25px;
+    padding: 16.5px 0 16.5px;
     border-bottom: 1px solid #ececec;
 
     &__container {
