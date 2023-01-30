@@ -47,6 +47,9 @@
   background-color: white;
   position: absolute;
   width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   &container {
     &-svg {
       color: black;
@@ -59,23 +62,8 @@
       }
     }
   }
-  &__menu {
+  &__contact {
     list-style: none;
-    &-item {
-      display: block;
-      font-weight: 500;
-      font-size: 40px;
-      line-height: calc(47 / 40);
-      letter-spacing: 0.02em;
-      color: var(--main-text-color);
-      text-decoration: none;
-      outline: none;
-      cursor: pointer;
-      &:is(:hover, :focus) {
-        color: var(--light-blue);
-        text-decoration: underline var(--light-blue);
-      }
-    }
     &-phone {
       display: block;
       font-weight: 500;
@@ -85,7 +73,6 @@
       color: var(--light-blue);
       text-decoration: none;
       outline: none;
-      margin-top: 302px;
       padding-bottom: 32px;
       cursor: pointer;
       &:is(:hover, :focus) {
@@ -102,6 +89,31 @@
       text-decoration: none;
       outline: none;
       padding-bottom: 64px;
+      cursor: pointer;
+      &:is(:hover, :focus) {
+        color: var(--light-blue);
+        text-decoration: underline var(--light-blue);
+      }
+    }
+  }
+  &__box {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  &__menu {
+    list-style: none;
+
+    &-item {
+      display: block;
+      font-weight: 500;
+      font-size: 40px;
+      line-height: calc(47 / 40);
+      letter-spacing: 0.02em;
+      color: var(--main-text-color);
+      text-decoration: none;
+      outline: none;
       cursor: pointer;
       &:is(:hover, :focus) {
         color: var(--light-blue);
