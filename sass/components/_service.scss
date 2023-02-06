@@ -44,17 +44,18 @@
       transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     }
   }
-}
-@include screen-double-density {
-  .service {
-    max-height: 600px;
-    background-image: linear-gradient(
-        rgba(47, 48, 58, 0.4),
-        rgba(47, 48, 58, 0.4)
-      ),
-      url("../images/sprite/background-mobile2@2x.png");
+  @include screen-double-density {
+    .service {
+      max-height: 600px;
+      background-image: linear-gradient(
+          rgba(47, 48, 58, 0.4),
+          rgba(47, 48, 58, 0.4)
+        ),
+        url("../images/sprite/background-mobile2@2x.png");
+    }
   }
 }
+
 @include tablet {
   .service {
     background-image: linear-gradient(
@@ -63,17 +64,18 @@
       ),
       url("../images/sprite/background-tablet@1x.png");
   }
-}
-@include screen-double-density {
-  .service {
-    max-height: 600px;
-    background-image: linear-gradient(
-        rgba(47, 48, 58, 0.4),
-        rgba(47, 48, 58, 0.4)
-      ),
-      url("../images/sprite/background-tablet@2x.png");
+  @include screen-double-density {
+    .service {
+      max-height: 600px;
+      background-image: linear-gradient(
+          rgba(47, 48, 58, 0.4),
+          rgba(47, 48, 58, 0.4)
+        ),
+        url("../images/sprite/background-tablet@2x.png");
+    }
   }
 }
+
 @include desktop {
   .service {
     max-height: 600px;
