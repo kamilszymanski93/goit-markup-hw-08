@@ -64,6 +64,16 @@
       url("../images/sprite/background-png.png");
   }
 }
+@include screen-double-density {
+  .service {
+    max-height: 600px;
+    background-image: linear-gradient(
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url("../images/sprite/background-png.png");
+  }
+}
 // .service {
 //   background-color: #2f303a;
 //   background-image: linear-gradient(
